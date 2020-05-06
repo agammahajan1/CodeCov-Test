@@ -10,10 +10,9 @@ jobs:
   build:
 
     runs-on: macos-latest
-    
     steps:
     - uses: actions/checkout@v2
-    - shell: sh
-      run: script.sh
+    - name: Install Dependencies
+      run:  pod install
     - name: Build And Run Tests
       run:  xcodebuild -scheme SwiftExample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4.1' build test
