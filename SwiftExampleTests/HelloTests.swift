@@ -13,6 +13,7 @@ class HelloTests: XCTestCase {
 
     func testHello() {
         sayHello()
+        XCTAssert(true == false, "Test")
     }
     
 //    func testGoodbye() {
