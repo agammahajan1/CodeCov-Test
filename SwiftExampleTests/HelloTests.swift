@@ -15,8 +15,8 @@ class HelloTests: XCTestCase {
         sayHello()
     }
     
-    func testGoodbye() {
-        sayGoodbye()
-    }
+//     func testGoodbye() {
+//         sayGoodbye()
+//     }
 
 }
