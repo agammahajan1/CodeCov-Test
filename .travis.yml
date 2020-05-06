@@ -4,4 +4,4 @@ osx_image: xcode10.1
 script:
   - xcodebuild -scheme SwiftExample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.1' build test
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t 25821326-0583-4c6d-8c93-4d0f7212a31a
