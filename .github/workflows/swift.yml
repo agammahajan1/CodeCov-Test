@@ -11,8 +11,6 @@ jobs:
 
     runs-on: macos-latest
     steps:
-    - name: add credential
-      run: echo "https://x-access-token:${{ secrets.Bibucket_Token }}@bitbucket.org" >> ~/.git-credentials
     - name: Checkout private tools
       run: git clone https://agam_mahajan:${{ secrets.Bibucket_Token }}@bitbucket.org/swigy/swiggy-ios.git
     - name: Install Dependencies
