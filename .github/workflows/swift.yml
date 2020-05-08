@@ -11,11 +11,10 @@ jobs:
 
     runs-on: macos-latest
     steps:
+    - name: add credential
+      run: echo "https://x-access-token:${{ secrets.Bibucket_Token }}@bitbucket.org" >> ~/.git-credentials
     - name: Checkout private tools
-      uses: actions/checkout@v2
-      with:
-        repository: swigy/ios-home-protobuf
-        token: ${{ secrets.Bibucket_Token }}
+      run: git clone https://agam_mahajan@bitbucket.org/swigy/swiggy-ios.git
     - name: Install Dependencies
       run:  pod install
     - name: Build And Run Tests
