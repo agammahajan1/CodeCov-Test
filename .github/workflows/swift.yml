@@ -14,7 +14,7 @@ jobs:
     - name: add credential
       run: echo "https://x-access-token:${{ secrets.Bibucket_Token }}@bitbucket.org" >> ~/.git-credentials
     - name: Checkout private tools
-      run: git clone https://agam_mahajan@bitbucket.org/swigy/swiggy-ios.git
+      run: git clone https://agam_mahajan:${{ secrets.Bibucket_Token }}@bitbucket.org/swigy/swiggy-ios.git
     - name: Install Dependencies
       run:  pod install
     - name: Build And Run Tests
