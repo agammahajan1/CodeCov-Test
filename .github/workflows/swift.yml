@@ -11,7 +11,8 @@ jobs:
 
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout private tools
+      run: git clone https://agam_mahajan:${{ secrets.Bibucket_Token }}@bitbucket.org/swigy/swiggy-ios.git
     - name: Install Dependencies
       run:  pod install
     - name: Build And Run Tests
