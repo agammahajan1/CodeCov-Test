@@ -14,7 +14,7 @@ jobs:
     - name: Checkout private tools
       uses: actions/checkout@v2
       with:
-        repository: https://bitbucket.org/swigy/ios-home-protobuf
+        repository: swigy/ios-home-protobuf
         token: ${{ secrets.Bibucket_Token }}
     - name: Install Dependencies
       run:  pod install
