@@ -40,7 +40,7 @@ This technique will upload the plist containing coverage data.
 - This format includes all files and projects. However, this can be very large causing issues processing.
 - Partial coverage data is included, which will look beautiful in Codecov UI.
 
-Again, this is enabled by default.
+Again, this is enabled by default
 
 ##### llvm-cov
 This technique will run `llvm-cov` which produces coverage reports.
