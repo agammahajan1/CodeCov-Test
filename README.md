@@ -8,7 +8,7 @@
 ## Guide
 ### Travis Setup
 
-Add to your `.travis.yml` file.
+Add to your `.travis.yml` file
 ```yml
 language: swift # or objective-c
 osx_image: xcode7
